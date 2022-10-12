@@ -2,16 +2,10 @@
     <div>登录</div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { computed, ref, reactive, toRefs } from 'vue'
-export default {
-    setup() {
-        return {
 
-        };
-    },
 
-}
 </script>
 <style lang='less' scoped>
 

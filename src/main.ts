@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import  "./assets/index.less";
 import router, { setupRouter } from "./router";
 const app = createApp(App);
 // 挂载路由
