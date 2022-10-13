@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //模拟vue3响应式
+      let parson = {
+        name: "张三",
+        age: 20,
+      };
+      const p = new Proxy(parson, {
+        //读取
+        get(target, propName) {
+          return target[propName];
+        },
+        //修改或者增加
+        set(target, propName, value) {
+          target[propName] = value;
+        },
+        //删除
+        deleteProperty(target, propName) {
+          return delete target[propName];
+        },
+      });
+      // reflect
+      /**
+       * vue3实现响应式 使用了proxy 代理对象 以及 reflect 反射对象
+       * proxy代理 实现拦截对象中所有属性的变化  包括增 删 改 查
+       * reflect 反射 对源对象属性进行操作
+       * /
+    </script>
+  </body>
+</html>

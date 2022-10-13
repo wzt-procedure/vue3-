@@ -53,6 +53,7 @@ export default defineConfig({
     // 9月更新
     assetsDir: "assets", //指定静态资源存放路径
     sourcemap: false, //是否构建source map 文件
+    minify: "terser",
     terserOptions: {
       // 生产环境移除console
       compress: {

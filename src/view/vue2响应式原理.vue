@@ -24,7 +24,7 @@ export default {
             configurable: true, // 控制属性是否可以删除 默认false
             //读取数据
             get(){
-                //有人读取 person 数据触发
+                //有人读取 person的 age 数据触发
                 return this.person
             },
             //修改数据
